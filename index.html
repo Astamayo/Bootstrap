@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Log</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Maintenance Log</h1>
+        <form id="maintenanceForm">
+            <div class="form-group">
+                <label for="carBrand">Car Brand:</label>
+                <select class="form-control" id="carBrand" name="carBrand">
+                    <option value="Toyota">Toyota</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="mileage">Mileage:</label>
+                <input type="number" class="form-control" id="mileage" name="mileage" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
